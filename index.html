@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquaries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <title>Amany's Portfolio</title>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">
+            <h2>Amany Elfawey</h2>
+        </div>
+        <div class="options">
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contactme">Contact Me</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+    <nav id="menu-nav">
+        <div class="logo">
+            <h2>Amany Elfawey</h2>
+        </div>
+        <div class="menu">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="">
+                <ul class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contactme" onclick="toggleMenu()">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+<!-- SECTIONS -->
+ <!-- HOME -->
+<section id="profile">
+    <div class="profilepic">
+        <img src="./assets/Profile3.jpg" alt="Amany Elfawey's Profile Picture">
+    </div>
+    <div class="profile-text">
+        <p>Hello, I'm </p>
+        <h1>Amany Elfawey</h1>
+        <p> Frontend Developer </p>
+        <div class="profile-btn">
+            <button class="btn btn-col-1" onclick="window.open('assets/AmanyElfawey.pdf')">Download CV</button>
+            <button class="btn btn-col-2" onclick="location.href='./#contactme'">Contact Info</button>
+        </div>
+        <div class="profile-icons">
+            <a href="https://github.com/amanyelfawey" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/amany-elfawey-38a85627a/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </div>
+</section>
+ <section id="about">
+    <div class="aboutme">
+        <p>ABOUT ME</p>
+        <h2>Know Me More</h2>
+    </div>
+    <div class="section1">
+        <div class="text1">
+            <p>I'm passionate about web development, specializing in building intuitive and accessible applications. I recently graduated from the Faculty of Computers and Information, Computer Science Department, at Tanta University, where I achieved a high very good GPA of 3.5.</p>
+            <br> 
+            <p>I began my journey at Route Academy, where I gained valuable insights into the latest industry trends and techniques. Later, I had the opportunity to mentor aspiring developers at GDSC, enhancing both my leadership and technical skills. </p>
+            <p>
+                I further expanded my knowledge with an internship at ITI, where I worked on real-world projects and improved my problem-solving abilities. My journey continued at CodeClause, where I worked independently, tackling diverse tasks and building practical solutions. With each experience, I’ve grown as a developer, eager to contribute to innovative projects.
+
+            </p>
+        </div>
+        <div class="details">
+            <ul>
+ 
+                <li><span class="detail">Email:</span><span  class="input">amanyelfawey5@gmail.com</span></li>
+                <li><span class="detail">Age:</span><span class="input">23</span></li>
+                <li><span class="detail" >From:</span><span class="input">Alexandria, Egypt</span></li>
+            </ul>
+        </div>
+    </div>
+</section> 
+
+
+
+
+
+
+
+<section id="projects">
+    <div class="projects">
+        <p>PROJECTS</p>
+        <h2>My Work</h2>
+    </div>
+    <div class="project-gallery">
+        <!-- Card 1 -->
+        <div class="card" id="project1">
+            <img src="./assets/Medix.png "alt="Project 1">
+            <h3>Medix Project</h3>
+            <button onclick="openDialog('dialog1')">View Details</button>
+        </div>
+        <!-- Card 2 -->
+        <div class="card" id="project2">
+            <img src="./assets/Yummy.png" alt="Project 2">
+            <h3>Yummy Project</h3>
+            <button onclick="openDialog('dialog2')">View Details</button>
+        </div>
+        <!-- Card 3 -->
+        <div class="card" id="project3">
+            <img src="./assets/Bakery.png" alt="Project 3">
+            <h3>Bakery Project</h3>
+            <button onclick="openDialog('dialog3')">View Details</button>
+        </div>
+        <!-- Card 4 -->
+        <div class="card" id="project4">
+            <img src="./assets/CRUD.png" alt="Project 4">
+            <h3>CRUD Operations Project</h3>
+            <button onclick="openDialog('dialog4')">View Details</button>
+        </div>
+        <!-- Card 5 -->
+        <div class="card" id="project5">
+            <img src="./assets/Bandi.png" alt="Project 5">
+            <h3>Bandi Project</h3>
+            <button onclick="openDialog('dialog5')">View Details</button>
+        </div>
+        <!-- Card 6 -->
+        <div class="card" id="project6">
+            <img src="./assets/Daniel.png" alt="Project 6">
+            <h3>Daniel Project</h3>
+            <button onclick="openDialog('dialog6')">View Details</button>
+        </div>
+        <!-- Card 7 -->
+        <div class="card" id="project7">
+            <img src="./assets/Simone.png" alt="Project 7">
+            <h3>Simone Project</h3>
+            <button onclick="openDialog('dialog7')">View Details</button>
+        </div>
+        <!-- Card 8 -->
+        <div class="card" id="project8">
+            <img src="./assets/GoTrip.png" alt="Project 8">
+            <h3>Go Trip Project</h3>
+            <button onclick="openDialog('dialog8')">View Details</button>
+        </div>
+        <!-- Card 9 -->
+        <div class="card" id="project9">
+            <img src="./assets/TextEditor.png" alt="Project 9">
+            <h3>Text Editor </h3>
+            <button onclick="openDialog('dialog9')">View Details</button>
+        </div>
+        <!-- Card 10 -->
+        <div class="card" id="project10">
+            <img src="./assets/Translate.png" alt="Project 10">
+            <h3>Live Language Translation</h3>
+            <button onclick="openDialog('dialog10')">View Details</button>
+        </div>
+                <!-- Card 11 -->
+                <div class="card" id="project11">
+                    <img src="./assets/QUOTE.png" alt="Project 11">
+                    <h3>Quote of the day</h3>
+                    <button onclick="openDialog('dialog11')">View Details</button>
+                </div>
+    </div>
+
+    <!-- Dialogs for each project -->
+
+
+
+
+</section>
+<section id="contactme">
+    <div class="contacttitle">
+        <p>Get In Touch</p>
+        <h2>Contact Me</h2>
+    </div>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="icon-container">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-text">
+              <span>Email: <a href="mailto:amanyelfawey5@gmail.com">amanyelfawey5@gmail.com</a></span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon-container">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="contact-text">
+              <span>Phone/WhatsApp: <a href="tel:+201125881107">01125881107</a></span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon-container">
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="contact-text">
+              <span>LinkedIn: <a href="https://www.linkedin.com/in/amany-elfawey-38a85627a/" target="_blank">View Profile</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</section>
+
+<div>
+
+    <div class="dialog-overlay" id="dialog1" onclick="closeDialog()">
+        <div class="dialog-box">
+            <span class="close" onclick="closeDialog()">×</span>
+            <h3>Medix</h3>
+            <p>Medix was my graduation project, for which I received an A+. It’s a healthcare web platform that streamlines doctor appointment bookings by specialty and availability and includes an AI-powered tool for brain MRI tumor analysis. Designed with secure authentication and password recovery, Medix is fully responsive for ease across devices. I developed the user interface with React.js, Next.js, and Tailwind CSS, focusing on accessibility and smooth navigation, and created the UI/UX design in Figma. Key features include appointment scheduling, profile management, and seamless integration of AI analysis tools for an optimized user experience.</p>
+            <h5 class="tools"><span class="tool">Tools:</span>React.js,Next.js,Tailwind CSS,Shadcn</h5>
+
+            <a href="https://github.com/amanyelfawey/Medix" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+
+    <div class="dialog-overlay" id="dialog2" onclick="closeDialog()">
+        <div class="dialog-box">
+            <span class="close" onclick="closeDialog()">×</span>
+            <h3>Yummy</h3>
+            <p>The "Yummy" project is a food discovery website that allows users to search for recipes, explore categories, ingredients, and areas, and view detailed meal instructions. It uses an external API to display recipes, categories, and ingredients, while also offering search functionality, meal details, and filtering by category or area. The site includes a responsive navigation menu and a contact form with input validation for user interaction. The website is designed to provide a seamless experience for food lovers, making it easy to discover new recipes and explore cooking ideas.</p>
+            <h5><span class="tool">Tools:</span>HTML,CSS,Javascript</h5>
+            <a href="https://github.com/amanyelfawey/yummy-project/tree/main/EXAM2" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+
+    <div class="dialog-overlay" id="dialog3" onclick="closeDialog()">
+        <div class="dialog-box">
+            <span class="close" onclick="closeDialog()">×</span>
+            <h3>Family Bakery</h3>
+            <p>For the Engage Bakery website project description:
+
+                Developed a responsive website for Engage Bakery, focusing on a visually appealing and user-friendly layout. The design integrates an inviting homepage, bakery item showcases, and an interactive contact section with map integration. Enhanced accessibility features and incorporated a seamless navigation bar.</p>
+            <h5><span class="tool">Tools:</span>HTML,CSS</h5>
+            <a href="https://github.com/amanyelfawey/Web-Applications/tree/main/Bakery%20Project" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+
+    <div class="dialog-overlay" id="dialog4" onclick="closeDialog()">
+        <div class="dialog-box">
+            <span class="close" onclick="closeDialog()">×</span>
+            <h3>CRUD Operations</h3>
+            <p>The CRUD Product Management System simplifies product data handling with essential CRUD operations. Users can create, read, update, and delete product entries, while the app dynamically calculates total price with taxes and discounts. It supports search functionality by title or category and leverages local storage for data persistence. A delete-all feature clears all stored items in one click, and the update function smoothens editing entries. The system interface is user-friendly, enhancing efficiency in managing product information.</p>
+            <h5><span class="tool">Tools:</span>HTML,CSS,Bootstrap,Javascript</h5>
+            <a href="https://github.com/amanyelfawey/CRUDS" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+    <div class="dialog-overlay" id="dialog5" onclick="closeDialog()">
+        <div class="dialog-box">
+            <span class="close" onclick="closeDialog()">×</span>
+            <h3>Bandi Project
+            </h3>
+            <p>This website showcases a creative business offering design and development services. It includes a sticky navbar for easy navigation, a landing section with a call-to-action button, and a portfolio section displaying various works like designs and apps. The features section highlights the business’s core strengths. The team section introduces the team members, and the footer includes social media links. The layout is fully responsive, optimized for both desktop and mobile devices.</p>
+            <h5><span class="tool">Tools:</span>HTML,CSS,Bootstrap,Javascript</h5>
+            <a href="https://github.com/amanyelfawey/Web-Applications/tree/main/Bandi%20Project" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+    <div class="dialog-overlay" id="dialog6" onclick="closeDialog()">
+        <div class="dialog-box">
+            <span class="close" onclick="closeDialog()">×</span>
+            <h3>Daniels Project</h3>
+            <p>This project is a professional portfolio website for "Larry Daniels," a UI/UX Designer & Web Developer. It features a modern, responsive design with sections for home, about, services, portfolio, and testimonials. The website highlights key skills with progress bars, interactive social media icons, and a carousel for client reviews. It also includes a clear call-to-action with downloadable CV and contact buttons. The design incorporates Bootstrap, Font Awesome, and custom styling to create a clean and engaging user experience.</p>
+            <h5><span class="tool">Tools:</span>HTML,CSS,Bootstrap,Javascript</h5>
+            <a href="https://github.com/amanyelfawey/Web-Applications/tree/main/Daniels%20Project" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+    <div class="dialog-overlay" id="dialog7" onclick="closeDialog()">
+        <div class="dialog-box">
+            <span class="close" onclick="closeDialog()">×</span>
+            <h3>Simone Project</h3>
+            <p>This project is a personal portfolio website for a web developer, showcasing their skills, experience, and services. It features a modern layout with sections for home, about, services, resume, portfolio, and contact. The website highlights the developer’s skills with progress bars, includes a downloadable CV button, and offers a contact form for inquiries. The design is responsive and user-friendly, making it accessible across devices. It uses clean HTML and CSS with a focus on a professional and engaging presentation.</p>
+            <h5><span class="tool">Tools:</span>HTML,CSS</h5>
+            <a href="https://github.com/amanyelfawey/Web-Applications/tree/main/Simone%20Project" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+    <div class="dialog-overlay" id="dialog8" onclick="closeDialog()">
+        <div class="dialog-box">
+            <span class="close" onclick="closeDialog()">×</span>
+            <h3>Go Trip</h3>
+            <p>GO TRIPS is a travel website designed to offer users an immersive experience in exploring Egypt's iconic destinations, such as the Pyramids of Giza, Dahab, and Siwa Oasis. The site features an intuitive booking system with detailed itineraries, photos, and descriptions of each destination. A responsive layout ensures a seamless experience across all devices, complemented by a visually appealing carousel and interactive sections. Users can easily browse trips, contact the team, and book their adventures through the streamlined interface. This project showcases strong use of HTML, CSS, and Bootstrap for dynamic web design.</p>
+            <h5><span class="tool">Tools:</span>HTML,CSS,Bootstrap,Javascript</h5>
+            <a href="https://github.com/amanyelfawey/GoTrip-Project" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+    <div class="dialog-overlay" id="dialog9" onclick="closeDialog()">
+        <div class="dialog-box">
+            <span class="close" onclick="closeDialog()">×</span>
+            <h3>Basic Text Editor</h3>
+            <p>This is a simple, interactive text editor built with HTML, CSS, and JavaScript, offering essential text formatting features. It includes bold, italic, underline, strikethrough, and alignment options, as well as undo/redo and font customization tools. The editor allows users to change font size and color while supporting ordered and unordered lists. Designed to be intuitive and user-friendly, it features a content-editable area for real-time text editing. This project highlights the use of the document.execCommand() method for rich text editing functionality.</p>
+            <h5><span class="tool">Tools:</span>HTML,CSS,Javascript</h5>
+            <a href="https://github.com/amanyelfawey/CodeClause_BasicTextEditor" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+    <div class="dialog-overlay" id="dialog10" onclick="closeDialog()">
+        <div class="dialog-box">
+            <span class="close" onclick="closeDialog()">×</span>
+            <h3>Live Language Translation</h3>
+            <p>This web-based language translation tool allows users to translate text between multiple languages in real-time. It features language selection, text input, and voice output for both the source and translated languages. The translation is powered by an API, with the option to copy the translated text to the clipboard. Users can also swap languages with a single click to quickly reverse the translation. The interface is designed for easy text input and output, with a 5000-character limit for translation.</p>
+            <h5><span class="tool">Tools:</span>HTML,CSS,Javascript</h5>
+            <a href="https://github.com/amanyelfawey/CodeClause_LiveLanguageTranslation" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+    <div class="dialog-overlay" id="dialog11" onclick="closeDialog()">
+        <div class="dialog-box">
+            <span class="close" onclick="closeDialog()">×</span>
+            <h3>Quotes App</h3>
+            <p>The Quotes App provides users with a daily dose of inspiration by displaying a random quote along with the author’s name. With a simple click of a button, the app generates a new quote and changes the background image to match the quote's theme. The design offers an engaging and user-friendly experience with beautiful visuals and rotating content. Each quote is carefully curated from famous authors and thinkers. This app showcases the power of JavaScript for dynamic content rendering and interactivity.</p>
+            <h5><span class="tool">Tools:</span>HTML,CSS,Javascript</h5>
+            <a href="https://github.com/amanyelfawey/Quote-App" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer">
+    <div class="footer-content">
+      <p>Designed and developed by <span>Amany Elfawey</span></p>
+    </div>
+</div>
+
+
+  
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
